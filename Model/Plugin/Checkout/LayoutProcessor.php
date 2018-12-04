@@ -13,7 +13,7 @@ class LayoutProcessor
     ) {
 
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
-        ['shippingAddress']['children']['shipping-address-fieldset']['children']['checkoutadditionalfield'] = [
+        ['shippingAddress']['children']['shipping-address-fieldset']['children']['instructions'] = [
             'component' => 'Magento_Ui/js/form/element/textarea',
             'config' => [
                 'customScope' => 'shippingAddress',
@@ -22,7 +22,7 @@ class LayoutProcessor
                 'options' => [],
                 'id' => 'instructions'
             ],
-            'dataScope' => 'shippingAddress.checkoutadditionalfield',
+            'dataScope' => 'shippingAddress.instructions',
             'label' => 'Instructions',
             'provider' => 'checkoutProvider',
             'visible' => true,

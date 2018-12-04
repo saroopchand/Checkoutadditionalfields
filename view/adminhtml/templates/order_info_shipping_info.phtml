@@ -1,0 +1,13 @@
+<div id="instructions">
+    <strong><?php echo __('Instructions') ?></strong>
+    <span class="price"><?=$block->getInstructions() ?></span>
+</div>
+<script type="text/javascript">
+    require(
+        ['jquery'],
+        function($) {
+            var element = $('#instructions').detach();
+            $('.order-shipping-method').append(element);
+        }
+    );
+</script>
