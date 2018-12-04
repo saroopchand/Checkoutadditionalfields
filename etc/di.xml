@@ -14,23 +14,4 @@
         <plugin name="set-flag-for-plugin-email"
                 type="Progos\Checkoutadditionalfields\Model\Plugin\Sales\Order\Email\SenderBuilder" sortOrder="12345"/>
     </type>
-
-    <!--<type name="Magento\Sales\Model\Order\Pdf\Invoice">
-        <plugin name="set-flag-for-plugin-pdf"
-                type="Oye\Deliverydate\Model\Sales\Order\Pdf\InvoicePlugin" sortOrder="12349"/>
-    </type>
-
-    <type name="Magento\Sales\Model\Order\Pdf\Shipment">
-        <plugin name="set-flag-for-plugin-pdf"
-                type="Oye\Deliverydate\Model\Sales\Order\Pdf\ShipmentPlugin" sortOrder="12349"/>
-    </type>
-
-    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
-        <arguments>
-            <argument name="columns" xsi:type="array">
-                <item name="delivery_date" xsi:type="string">sales_order.delivery_date</item>
-            </argument>
-        </arguments>
-    </virtualType>-->
-
 </config>
