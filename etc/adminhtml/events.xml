@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="core_layout_render_element">
+        <observer name="progos_instructions_add_to_order_view" instance="Progos\Checkoutadditionalfields\Model\Observer\Adminhtml\AddHtmlToOrderShippingViewObserver" />
+    </event>
+    <event name="adminhtml_sales_order_create_process_data_before">
+        <observer name="progos_instructions_save_to_quote" instance="Progos\Checkoutadditionalfields\Model\Observer\Adminhtml\SaveInstructionsToQuote" />
+    </event>
+</config>
