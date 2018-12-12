@@ -5,10 +5,10 @@
                 type="Progos\Checkoutadditionalfields\Model\Plugin\Checkout\ShippingInformationManagement" sortOrder="12345"/>
     </type>
 
-    <type name="Magento\Sales\Model\Order">
+    <!--<type name="Magento\Sales\Model\InvoiceOrder">
         <plugin name="add-instructions-to-shipping-description"
                 type="Progos\Checkoutadditionalfields\Model\Plugin\Sales\Order" sortOrder="12345"/>
-    </type>
+    </type>-->
 
     <type name="Magento\Sales\Model\Order\Email\SenderBuilder">
         <plugin name="set-flag-for-plugin-email"

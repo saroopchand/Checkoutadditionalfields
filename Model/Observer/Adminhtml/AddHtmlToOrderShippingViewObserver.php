@@ -37,6 +37,12 @@ class AddHtmlToOrderShippingViewObserver implements ObserverInterface
      */
     public function execute(EventObserver $observer)
     {
+
+        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
+        $logger = new \Zend\Log\Logger();
+        $logger->addWriter($writer);
+        $logger->info($observer->getElementName());
+
         if($observer->getElementName() == 'order_shipping_view')
         {
             $orderShippingViewBlock = $observer->getLayout()->getBlock($observer->getElementName());

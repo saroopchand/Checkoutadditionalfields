@@ -33,10 +33,10 @@ class SenderBuilder
     public function aroundSend($subject, \Closure $proceed)
     {
 
-        $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
+        /*$writer = new \Zend\Log\Writer\Stream(BP . '/var/log/test.log');
         $logger = new \Zend\Log\Logger();
         $logger->addWriter($writer);
-        $logger->info('6. SenderBuilder Entered');
+        $logger->info('6. SenderBuilder Entered');*/
 
 
         $vars = $this->templateContainer->getTemplateVars();
